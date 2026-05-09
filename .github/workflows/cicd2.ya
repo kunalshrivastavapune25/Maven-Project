@@ -13,7 +13,7 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
       - name: Build the project
-        run: mvn package
+        run: mv package
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
